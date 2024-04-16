@@ -1,5 +1,6 @@
 package com.rami.assignmentapplication
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -17,4 +18,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
+
+    //var mediaPlayer = MediaPlayer.create(context, R.raw.wind_chimes)
+    //mediaPlayer.start()
 }
