@@ -2,6 +2,7 @@ package com.rami.assignmentapplication
 
 import android.media.MediaPlayer
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         val Score = findViewById<TextView>(R.id.Score)
 
         savedInstanceState?.let {
-            // If there is, retrieve the score
+            //retrieve the score
             currentScore = savedInstanceState.getInt("currentScore", 0)
             Score.text = currentScore.toString()
         }
@@ -50,12 +51,14 @@ class MainActivity : AppCompatActivity() {
         Reset.setOnClickListener{
             currentScore = 0
             Score.text = currentScore.toString()
+            //logs and testing
+            Log.d("MainActivity", "debug log msg from me!")
         }
 
 
     }
     override fun onSaveInstanceState(outState: Bundle) {
-        // Save the current score to the outState bundle
+        // Save to outState
         outState.putInt("currentScore", currentScore)
         super.onSaveInstanceState(outState)
     }
