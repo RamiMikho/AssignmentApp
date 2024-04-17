@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">AssignmentApplication</string>
     <string name="Score">Score: </string>
-    <string name="AddScore">Add Score</string>
-    <string name="ReduceScore">Reduce Score</string>
+    <string name="AddScore">More Cookies!</string>
+    <string name="ReduceScore">Less Cookies?!?</string>
     <string name="Reset">Reset</string>
 </resources>
