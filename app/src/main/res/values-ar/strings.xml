@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تطبيق التقرير</string>
+    <string name="Score">نقاط:</string>
+    <string name="AddScore">المزيد من البسكويت!</string>
+    <string name="ReduceScore">أقل بسكويت?!?</string>
+    <string name="Reset">إعادة من البداية</string>
+</resources>

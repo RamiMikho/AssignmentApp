@@ -33,23 +33,23 @@ class MainActivity : AppCompatActivity() {
         savedInstanceState?.let {
             // If there is, retrieve the score
             currentScore = savedInstanceState.getInt("currentScore", 0)
-            Score.text = "Score: $currentScore"
+            Score.text = currentScore.toString()
         }
 
         AddScore.setOnClickListener {
             increment()
-            Score.text = "Score: $currentScore"
+            Score.text = currentScore.toString()
             if(currentScore >= 15){
                 mediaPlayer.start()
             }
         }
         ReduceScore.setOnClickListener{
             decrement()
-            Score.text = "Score: $currentScore"
+            Score.text = currentScore.toString()
         }
         Reset.setOnClickListener{
             currentScore = 0
-            Score.text = "Score: $currentScore"
+            Score.text = currentScore.toString()
         }
 
 
@@ -61,12 +61,12 @@ class MainActivity : AppCompatActivity() {
     }
     private fun increment() {
         currentScore += 1
-        //Toast.makeText(this, "Score: $currentScore", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this, " $currentScore", Toast.LENGTH_SHORT).show()
     }
     private fun decrement() {
         if (currentScore > 0) {
             currentScore -= 1
-            //Toast.makeText(this, "Score: $currentScore", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, " $currentScore", Toast.LENGTH_SHORT).show()
         }
     }
 
